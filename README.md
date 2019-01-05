@@ -31,3 +31,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Marketing &amp; Markdown (Create README.md)
 1. Using `git clean` to revert project (TG05 Using git clean to revert project)
 1. First person character overview (TG06 First person character overview, adjusting arena)
+1. The third person character (TG07 Adding third person character and nawmesh)
