@@ -34,3 +34,5 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. The third person character (TG07 Adding third person character and navmesh)
 1. Introducing AI behaviour trees (TG08 Introducing AI behaviour trees)
 1. Introducing AI blackboard data (TG09 Introducing AI blackboard data)
+1. Target points and patrol routes (TG10 Target points and patrol routes)
+1. Using any actor for waypoint (TG11 Using any actor for waypoint)
