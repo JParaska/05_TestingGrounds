@@ -36,3 +36,6 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Introducing AI blackboard data (TG09 Introducing AI blackboard data)
 1. Target points and patrol routes (TG10 Target points and patrol routes)
 1. Using any actor for waypoint (TG11 Using any actor for waypoint)
+1. Options for grouping actors
+1. Blueprint Behaviour tree tasks
+1. Modular arithmetic & cycles (TG14 Patroling using behavior tree task and multiple target points)
