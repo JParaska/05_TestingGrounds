@@ -23,10 +23,11 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 * Procedural generation of grounds
 * AI
 
-## Lecture list (Commits)
+## Lecture list (Commit)
 
 1. Testing Grounds Introduction
 1. Testing Grounds GDD (Initial Commit)
 1. Using Git LFS (Enabled Git LFS and added FPS content)
 1. Marketing &amp; Markdown (Create README.md)
-1. Using `git clean` to revert project (Using git clean to revert project)
+1. Using `git clean` to revert project (TG05 Using git clean to revert project)
+1. First person character overview (TG06 First person character overview, adjusting arena)
