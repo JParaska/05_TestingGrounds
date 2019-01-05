@@ -33,3 +33,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. First person character overview (TG06 First person character overview, adjusting arena)
 1. The third person character (TG07 Adding third person character and navmesh)
 1. Introducing AI behaviour trees (TG08 Introducing AI behaviour trees)
+1. Introducing AI blackboard data (TG09 Introducing AI blackboard data)
