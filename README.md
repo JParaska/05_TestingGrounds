@@ -44,3 +44,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Reading blackboard data in C++
 1. The consequences of inheritance
 1. Converting blueprint to C++ (TG19 Converting patrolling to C++)
+1. Composition over inheritance (TG20 Creating patrol route component)
