@@ -39,3 +39,8 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Options for grouping actors
 1. Blueprint Behaviour tree tasks
 1. Modular arithmetic & cycles (TG14 Patroling using behavior tree task and multiple target points)
+1. Performance profiling 101
+1. C++ AIBehavior tree tasks
+1. Reading blackboard data in C++
+1. The consequences of inheritance
+1. Converting blueprint to C++ (TG19 Converting patrolling to C++)
