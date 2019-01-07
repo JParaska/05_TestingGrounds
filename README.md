@@ -47,3 +47,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Composition over inheritance (TG20 Creating patrol route component)
 1. Talking head: What we've covered so far
 1. How to delete a C++ class (TG22 Deleting Patrolling Guard class, clean-up)
+1. Instanced materials (TG23 Creating instanced materials)
