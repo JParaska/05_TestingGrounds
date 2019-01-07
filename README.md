@@ -45,3 +45,5 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. The consequences of inheritance
 1. Converting blueprint to C++ (TG19 Converting patrolling to C++)
 1. Composition over inheritance (TG20 Creating patrol route component)
+1. Talking head: What we've covered so far
+1. How to delete a C++ class (TG22 Deleting Patrolling Guard class, clean-up)
