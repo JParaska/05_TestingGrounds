@@ -50,3 +50,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Instanced materials (TG23 Creating instanced materials)
 1. Introducing AI perception
 1. OnTargetPerceptionUpdated event (TG25 Simple AI perception sight)
+1. AI hearing perception in Unreal (TG26 Simple AI perception hearing)
