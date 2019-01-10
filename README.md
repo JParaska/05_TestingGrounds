@@ -52,3 +52,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. OnTargetPerceptionUpdated event (TG25 Simple AI perception sight)
 1. AI hearing perception in Unreal (TG26 Simple AI perception hearing)
 1. The animation starter pack (TG27 Adding animation starter pack)
+1. Changing a character's animation (TG28 Changing a character's animation)
