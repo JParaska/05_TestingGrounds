@@ -55,3 +55,6 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Changing a character's animation (TG28 Changing a character's animation)
 1. Customising a character blueprint (TG29 Customising a character blueprint)
 1. Sub behaviour trees (TG30 Sub behaviour trees)
+1. Talking head - Introducing Sam
+1. Talking head - Refactoring superpowers
+1. Simplifying our project (TG33 Refactoring content structure)
