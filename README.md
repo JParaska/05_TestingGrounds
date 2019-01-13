@@ -59,3 +59,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Talking head - Refactoring superpowers
 1. Simplifying our project (TG33 Refactoring content structure)
 1. Renaming & moving CPP (TG34 Renaming & moving CPP, deleting old content files)
+1. Solution: Renaming & moving CPP (TG35 Refactoring source folder structure)
