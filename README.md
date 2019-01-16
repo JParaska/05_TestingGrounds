@@ -64,3 +64,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Understanding animation blueprints
 1. Creating Animation state machines
 1. Movement blend spaces (TG39 Introduciton to animations)
+1. Offset animations (TG40 Creating aditive aim offset animations)
