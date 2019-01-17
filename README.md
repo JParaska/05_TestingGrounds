@@ -67,3 +67,5 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Offset animations (TG40 Creating aditive aim offset animations)
 1. Aiming blend spaces offsets (TG41 Aiming blend spaces offsets)
 1. Rotating with SetFocalPoint() (TG42 Rotating with SetFocalPoint())
+1. Character movement vs. rotation
+1. Control rotation for aim (TG44 Control rotation for aim)
