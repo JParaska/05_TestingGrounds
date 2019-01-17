@@ -69,3 +69,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Rotating with SetFocalPoint() (TG42 Rotating with SetFocalPoint())
 1. Character movement vs. rotation
 1. Control rotation for aim (TG44 Control rotation for aim)
+1. Behavior tree decorators (TG45 Behavior tree decorators)
