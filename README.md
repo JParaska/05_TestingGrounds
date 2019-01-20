@@ -70,3 +70,6 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Character movement vs. rotation
 1. Control rotation for aim (TG44 Control rotation for aim)
 1. Behavior tree decorators (TG45 Behavior tree decorators)
+1. Behaviour tree services
+1. Tweaking AI behaviour
+1. Debugung AI behaviour (TG48 Adding "suspicious" behaviour)
