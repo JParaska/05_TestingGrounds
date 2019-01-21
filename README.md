@@ -73,3 +73,5 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Behaviour tree services
 1. Tweaking AI behaviour
 1. Debugung AI behaviour (TG48 Adding "suspicious" behaviour)
+1. Refactoring to a Gun actor
+1. Attaching actors to components (TG50 Moving Fire logic to gun)
