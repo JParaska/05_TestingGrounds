@@ -76,3 +76,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Refactoring to a Gun actor
 1. Attaching actors to components (TG50 Moving Fire logic to gun)
 1. Configuring the gun (TG51 Configuring the gun)
+1. Moving files from LFS to Git (Moved all assets into Static sub-folder)
