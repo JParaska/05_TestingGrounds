@@ -78,3 +78,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Configuring the gun (TG51 Configuring the gun)
 1. Moving files from LFS to Git (Moved all assets into Static sub-folder; TG52 Updated .gitattributes to track only Static sub-folder)
 1. To LFS or Not to LFS? (TG53 Moved some assets into non LFS folder)
+1. Child actor components (TG54 Giving new gun to 3rd person character)
