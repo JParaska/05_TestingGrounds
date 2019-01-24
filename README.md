@@ -81,3 +81,5 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Child actor components (TG54 Giving new gun to 3rd person character)
 1. Introduction to Inverse kinematics
 1. Inverse kinematics with animations (TG55 IK for hands on gun)
+1. Compare blueprints with diffs
+1. Boolean blending for aim states (TG57 Boolean blending for aim states)
