@@ -84,3 +84,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Compare blueprints with diffs
 1. Boolean blending for aim states (TG57 Boolean blending for aim states)
 1. Adding firing animations (TG58 Adding firing animations additive)
+1. Animation notify events (TG59 Fire anim notify)
