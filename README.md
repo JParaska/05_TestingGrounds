@@ -83,3 +83,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Inverse kinematics with animations (TG55 IK for hands on gun)
 1. Compare blueprints with diffs
 1. Boolean blending for aim states (TG57 Boolean blending for aim states)
+1. Adding firing animations (TG58 Adding firing animations additive)
