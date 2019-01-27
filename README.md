@@ -87,3 +87,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Animation notify events (TG59 Fire anim notify)
 1. Taking damage in blueprint
 1. Death animations and refactors (TG62 Damaging enemies & refactoring)
+1. Switching 1st and 3rd person (TG63 Fixing aiming on 3rd person character)
