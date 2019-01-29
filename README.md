@@ -91,3 +91,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Owner invisible meshes (TG64 Adding 1st person arms to 3rd person character)
 1. Separating firing from gun meshes
 1. Aiming our 1st person camera (TG66 Moving firing to standalone component)
+1. Architecture of infinite runners (TG67 Architecture of infinite runners)
