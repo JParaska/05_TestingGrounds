@@ -93,3 +93,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Aiming our 1st person camera (TG66 Moving firing to standalone component)
 1. Architecture of infinite runners (TG67 Architecture of infinite runners)
 1. Spawning terrian in game mode (TG68 Spawning terrian in game mode)
+1. Level gating for testing grounds (TG69 Level gating for testing grounds)
