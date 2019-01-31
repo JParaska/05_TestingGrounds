@@ -98,3 +98,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Garbage collecting previous tiles (TG71 Garbage collecting previous tiles)
 1. Merging our TP and FP files (TG72 Merging our TP and FP files)
 1. Hit vs. Overlap events (TG73 Fixing locking volume not to hit projectiles)
+1. Dynamically calculating navmesh (TG74 Dynamically calculating navmesh)
