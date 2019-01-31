@@ -96,3 +96,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Level gating for testing grounds (TG69 Level gating for testing grounds)
 1. Swapping materials in blueprint (TG70 Swapping barrier materials)
 1. Garbage collecting previous tiles (TG71 Garbage collecting previous tiles)
+1. Merging our TP and FP files (TG72 Merging our TP and FP files)
