@@ -100,3 +100,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Hit vs. Overlap events (TG73 Fixing locking volume not to hit projectiles)
 1. Dynamically calculating navmesh (TG74 Dynamically calculating navmesh)
 1. Keep it simple stupid (TG75 Report noise on shooting)
+1. Parallel behaviour tree tasks (TG76 Refactoring AI behaviour tree)
