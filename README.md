@@ -99,3 +99,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Merging our TP and FP files (TG72 Merging our TP and FP files)
 1. Hit vs. Overlap events (TG73 Fixing locking volume not to hit projectiles)
 1. Dynamically calculating navmesh (TG74 Dynamically calculating navmesh)
+1. Keep it simple stupid (TG75 Report noise on shooting)
