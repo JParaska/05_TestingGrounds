@@ -104,3 +104,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Custom BT tasks and decorators (TG77 Added custom Shooting BT task and Range check decorator)
 1. External build data in 4.14+
 1. Physical gun architecture (TG79 Moving firing back to gun actor)
+1. Converting a character BP to C++ (TG80 Converting a character BP to C++)
