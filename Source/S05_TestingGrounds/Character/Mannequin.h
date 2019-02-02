@@ -30,6 +30,9 @@ private:
 
 	FTimerHandle FireTH;
 
+	UPROPERTY(EditDefaultsOnly, Category = "Weapon")
+	bool bShooting;
+
 public:
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
@@ -38,8 +41,12 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
 	float BaseLookUpRate;
-/** Methods */
 
+	/** AnimMontage to play each time we fire */
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	class UAnimMontage* FireAnimation;
+
+/** Methods */
 public:
 	// Sets default values for this character's properties
 	AMannequin();
@@ -51,10 +58,13 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
-	void Fire();
+	void PullTrigger();
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
-	void StopFire();
+	void ReleaseTrigger();
+
+	UFUNCTION(BlueprintPure, Category = "Weapon")
+	bool IsShooting() { return bShooting; }
 
 protected:
 	// Called when the game starts or when spawned
@@ -80,6 +90,6 @@ protected:
 
 private:
 
-	void OnFire();
+	void Fire();
 	
 };

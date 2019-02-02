@@ -2,6 +2,7 @@
 
 #include "Mannequin.h"
 
+#include "Animation/AnimInstance.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/ChildActorComponent.h"
@@ -74,8 +75,8 @@ void AMannequin::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMannequin::Fire);
-	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AMannequin::StopFire);
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMannequin::PullTrigger);
+	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AMannequin::ReleaseTrigger);
 }
 
 void AMannequin::MoveForward(float Value)
@@ -108,18 +109,30 @@ void AMannequin::LookUpAtRate(float Rate)
 	AddControllerPitchInput(Rate * BaseLookUpRate * GetWorld()->GetDeltaSeconds());
 }
 
-void AMannequin::Fire()
+void AMannequin::PullTrigger()
 {
-	GetWorld()->GetTimerManager().SetTimer(FireTH, this, &AMannequin::OnFire, 0.2f, true, .0f);
+	bShooting = true;
+	GetWorld()->GetTimerManager().SetTimer(FireTH, this, &AMannequin::Fire, 0.2f, true, .0f);
 }
 
-void AMannequin::StopFire()
+void AMannequin::ReleaseTrigger()
 {
+	bShooting = false;
 	GetWorld()->GetTimerManager().ClearTimer(FireTH);
 }
 
-void AMannequin::OnFire()
+void AMannequin::Fire()
 {
+	// try and play a firing animation if specified
+	if (FireAnimation != NULL)
+	{
+		// Get the animation object for the arms mesh
+		UAnimInstance* AnimInstance = FPArms->GetAnimInstance();
+		if (AnimInstance != NULL)
+		{
+			AnimInstance->Montage_Play(FireAnimation, 1.f);
+		}
+	}
 	if (Gun) Gun->OnFire();
 }
 
