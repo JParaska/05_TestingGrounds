@@ -102,3 +102,5 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Keep it simple stupid (TG75 Report noise on shooting)
 1. Parallel behaviour tree tasks (TG76 Refactoring AI behaviour tree)
 1. Custom BT tasks and decorators (TG77 Added custom Shooting BT task and Range check decorator)
+1. External build data in 4.14+
+1. Physical gun architecture (TG79 Moving firing back to gun actor)
