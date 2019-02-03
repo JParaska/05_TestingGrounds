@@ -112,3 +112,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Procedural level generation (TG85 Importing props)
 1. Generating random numbers (TG86 Generating random points in box)
 1. Spawning actors in the tile (TG87 Spawning actors in the tile)
+1. Sphere casting in C++ (TG88 Checking collision for spawning objects)

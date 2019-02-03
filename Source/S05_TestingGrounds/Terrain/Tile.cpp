@@ -2,6 +2,7 @@
 
 #include "Tile.h"
 
+#include "DrawDebugHelpers.h"
 #include "Engine/World.h"
 
 // Sets default values
@@ -17,6 +18,13 @@ void ATile::BeginPlay()
 {
 	Super::BeginPlay();
 
+	FVector Location = GetActorLocation();
+	FColor C = CastSphere(Location, 250) ? FColor::Red : FColor::Green;
+	DrawDebugSphere(GetWorld(), Location, 250, 64,C, true, 1000);
+
+	Location = GetActorLocation() + FVector(0, 0, 1000);
+	C = CastSphere(Location, 250) ? FColor::Red : FColor::Green;
+	DrawDebugSphere(GetWorld(), Location, 250, 64, C, true, 1000);
 }
 
 // Called every frame
@@ -39,4 +47,10 @@ void ATile::PlaceActors(TSubclassOf<AActor> ToSpawn, int MinSpawn, int MaxSpawn)
 		Spawned->AttachToActor(this, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, false));
 		Spawned->SetActorRelativeLocation(SpawnPoint);
 	}
+}
+
+bool ATile::CastSphere(FVector Location, float Radius)
+{
+	FHitResult Hit;
+	return GetWorld()->SweepSingleByChannel(Hit, Location, Location, FQuat::Identity, ECollisionChannel::ECC_Camera, FCollisionShape::MakeSphere(Radius));
 }
