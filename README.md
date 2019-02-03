@@ -106,3 +106,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Physical gun architecture (TG79 Moving firing back to gun actor)
 1. Converting a character BP to C++ (TG80 Converting a character BP to C++)
 1. Who's pulled the trigger (TG81 Controlling firing from mannequin)
+1. Cooldown nodes & gameplay tags (TG82 Small changes)
