@@ -110,3 +110,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Animation montages and slots (TG83 Firing animation for TP mesh in Arms slot)
 1. Reaattaching the gun (TG84 Attaching gun to corrrect mesh)
 1. Procedural level generation (TG85 Importing props)
+1. Generating random numbers (TG86 Generating random points in box)
