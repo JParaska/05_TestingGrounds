@@ -46,6 +46,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	UAnimMontage* TPFireAnimation;
 
+
 /** Methods */
 public:
 	// Sets default values for this character's properties
@@ -56,6 +57,8 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	virtual void UnPossessed() override;
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
 	void PullTrigger();

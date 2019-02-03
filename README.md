@@ -108,3 +108,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Who's pulled the trigger (TG81 Controlling firing from mannequin)
 1. Cooldown nodes & gameplay tags (TG82 Small changes)
 1. Animation montages and slots (TG83 Firing animation for TP mesh in Arms slot)
+1. Reaattaching the gun (TG84 Attaching gun to corrrect mesh)

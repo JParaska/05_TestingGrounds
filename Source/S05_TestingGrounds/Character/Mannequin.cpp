@@ -44,7 +44,12 @@ void AMannequin::BeginPlay()
 		return;
 	}
 	Gun = GetWorld()->SpawnActor<AGun>(GunBlueprint);
-	Gun->AttachToComponent(FPArms, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint"));
+	if (IsPlayerControlled()) {
+		Gun->AttachToComponent(FPArms, FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint")); // FP arms
+	}
+	else {
+		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint")); // TP mesh
+	}
 }
 
 // Called every frame
@@ -77,6 +82,15 @@ void AMannequin::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AMannequin::PullTrigger);
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &AMannequin::ReleaseTrigger);
+}
+
+void AMannequin::UnPossessed()
+{
+	Super::UnPossessed();
+
+	if (Gun) {
+		Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules(EAttachmentRule::SnapToTarget, true), TEXT("GripPoint")); // TP mesh
+	}
 }
 
 void AMannequin::MoveForward(float Value)
@@ -122,22 +136,11 @@ void AMannequin::ReleaseTrigger()
 void AMannequin::Fire()
 {
 	// try and play a firing animation if specified
-	if (FPFireAnimation != NULL)
-	{
-		// Get the animation object for the arms mesh
-		UAnimInstance* FPAnimInstance = FPArms->GetAnimInstance();
-		if (FPAnimInstance != NULL)
-		{
-			FPAnimInstance->Montage_Play(FPFireAnimation, 1.f);
-		}
+	if (FPFireAnimation != nullptr && FPArms->GetAnimInstance() != nullptr) {
+		FPArms->GetAnimInstance()->Montage_Play(FPFireAnimation, 1.f);
 	}
-	if (TPFireAnimation != NULL) {
-		// Get the animation for TP mesh		
-		UAnimInstance* TPAnimInstance = GetMesh()->GetAnimInstance();
-		if (TPAnimInstance != NULL)
-		{
-			TPAnimInstance->Montage_Play(TPFireAnimation, 1.f);
-		}
+	if (TPFireAnimation != nullptr && GetMesh()->GetAnimInstance() != nullptr) {
+		GetMesh()->GetAnimInstance()->Montage_Play(TPFireAnimation, 1.f);
 	}
 	if (Gun) Gun->OnFire();
 }
