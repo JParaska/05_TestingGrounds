@@ -111,26 +111,32 @@ void AMannequin::LookUpAtRate(float Rate)
 
 void AMannequin::PullTrigger()
 {
-	bShooting = true;
 	GetWorld()->GetTimerManager().SetTimer(FireTH, this, &AMannequin::Fire, 0.2f, true, .0f);
 }
 
 void AMannequin::ReleaseTrigger()
 {
-	bShooting = false;
 	GetWorld()->GetTimerManager().ClearTimer(FireTH);
 }
 
 void AMannequin::Fire()
 {
 	// try and play a firing animation if specified
-	if (FireAnimation != NULL)
+	if (FPFireAnimation != NULL)
 	{
 		// Get the animation object for the arms mesh
-		UAnimInstance* AnimInstance = FPArms->GetAnimInstance();
-		if (AnimInstance != NULL)
+		UAnimInstance* FPAnimInstance = FPArms->GetAnimInstance();
+		if (FPAnimInstance != NULL)
 		{
-			AnimInstance->Montage_Play(FireAnimation, 1.f);
+			FPAnimInstance->Montage_Play(FPFireAnimation, 1.f);
+		}
+	}
+	if (TPFireAnimation != NULL) {
+		// Get the animation for TP mesh		
+		UAnimInstance* TPAnimInstance = GetMesh()->GetAnimInstance();
+		if (TPAnimInstance != NULL)
+		{
+			TPAnimInstance->Montage_Play(TPFireAnimation, 1.f);
 		}
 	}
 	if (Gun) Gun->OnFire();

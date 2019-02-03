@@ -30,9 +30,6 @@ private:
 
 	FTimerHandle FireTH;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Weapon")
-	bool bShooting;
-
 public:
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Camera")
@@ -44,7 +41,10 @@ public:
 
 	/** AnimMontage to play each time we fire */
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	class UAnimMontage* FireAnimation;
+	class UAnimMontage* FPFireAnimation;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
+	UAnimMontage* TPFireAnimation;
 
 /** Methods */
 public:
@@ -62,9 +62,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Weapon")
 	void ReleaseTrigger();
-
-	UFUNCTION(BlueprintPure, Category = "Weapon")
-	bool IsShooting() { return bShooting; }
 
 protected:
 	// Called when the game starts or when spawned
