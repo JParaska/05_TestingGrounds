@@ -21,10 +21,6 @@ void ATile::BeginPlay()
 	FVector Location = GetActorLocation();
 	FColor C = CastSphere(Location, 250) ? FColor::Red : FColor::Green;
 	DrawDebugSphere(GetWorld(), Location, 250, 64,C, true, 1000);
-
-	Location = GetActorLocation() + FVector(0, 0, 1000);
-	C = CastSphere(Location, 250) ? FColor::Red : FColor::Green;
-	DrawDebugSphere(GetWorld(), Location, 250, 64, C, true, 1000);
 }
 
 // Called every frame
@@ -52,5 +48,5 @@ void ATile::PlaceActors(TSubclassOf<AActor> ToSpawn, int MinSpawn, int MaxSpawn)
 bool ATile::CastSphere(FVector Location, float Radius)
 {
 	FHitResult Hit;
-	return GetWorld()->SweepSingleByChannel(Hit, Location, Location, FQuat::Identity, ECollisionChannel::ECC_Camera, FCollisionShape::MakeSphere(Radius));
+	return GetWorld()->SweepSingleByChannel(Hit, Location, Location, FQuat::Identity, ECollisionChannel::ECC_GameTraceChannel2, FCollisionShape::MakeSphere(Radius));
 }
