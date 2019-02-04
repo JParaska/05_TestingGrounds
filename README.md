@@ -116,3 +116,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Configure custom trace channels (TG89 Custom trace channel for spawning objects)
 1. Spawning into free space (TG90 Spawning into free space)
 1. Randomising rotation & scale (TG91 Randomising rotation & scale of spawned props)
+1. Flyweight pattern for foliage (TG92 Spawning foliage in tiles)
