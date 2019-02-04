@@ -23,7 +23,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable, Category = "Terrain")
-	void PlaceActors(TSubclassOf<AActor> ToSpawn, float Radius = 100, int MinSpawn = 1, int MaxSpawn = 1);
+	void PlaceActors(TSubclassOf<AActor> ToSpawn, float Radius = 100, int MinSpawn = 1, int MaxSpawn = 1, float MinScale = 1, float MaxScale = 1);
 
 protected:
 	// Called when the game starts or when spawned
@@ -33,7 +33,7 @@ private:
 
 	bool FindEmptyLocation(FVector& EmptyLocation, float Radius);
 	
-	void PlaceActor(TSubclassOf<AActor> ToSpawn, FVector Location);
+	void PlaceActor(TSubclassOf<AActor> ToSpawn, FVector Location, float Scale);
 
 	bool CanSpawnAtLocation(FVector Location, float Radius);
 
