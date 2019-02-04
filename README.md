@@ -117,3 +117,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Spawning into free space (TG90 Spawning into free space)
 1. Randomising rotation & scale (TG91 Randomising rotation & scale of spawned props)
 1. Flyweight pattern for foliage (TG92 Spawning foliage in tiles)
+1. Choosing waypoint with EQS (TG93 Choosing waypoint with EQS)
