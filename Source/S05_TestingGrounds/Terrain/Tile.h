@@ -16,6 +16,8 @@ private:
 	UPROPERTY()
 	class UActorPool* Pool;
 
+	AActor* NavMeshBoundsVolume;
+
 /** Methods */	
 public:	
 	// Sets default values for this actor's properties
@@ -34,6 +36,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;	
 
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason);
+
 private:
 
 	bool FindEmptyLocation(FVector& EmptyLocation, float Radius);
@@ -41,5 +45,7 @@ private:
 	void PlaceActor(TSubclassOf<AActor> ToSpawn, FVector Location, float Scale);
 
 	bool CanSpawnAtLocation(FVector Location, float Radius);
+
+	void PositionNavMeshBoundsVolume();
 
 };

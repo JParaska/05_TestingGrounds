@@ -20,6 +20,12 @@ void ATile::BeginPlay()
 	Super::BeginPlay();
 }
 
+void ATile::EndPlay(const EEndPlayReason::Type EndPlayReason)
+{
+	Pool->Return(NavMeshBoundsVolume);
+	Super::EndPlay(EndPlayReason);
+}
+
 // Called every frame
 void ATile::Tick(float DeltaTime)
 {
@@ -42,6 +48,8 @@ void ATile::PlaceActors(TSubclassOf<AActor> ToSpawn, float Radius, int MinSpawn,
 void ATile::SetPool(UActorPool * InPool)
 {
 	Pool = InPool;
+
+	PositionNavMeshBoundsVolume();
 }
 
 bool ATile::FindEmptyLocation(FVector& EmptyLocation, float Radius)
@@ -77,4 +85,14 @@ bool ATile::CanSpawnAtLocation(FVector Location, float Radius)
 	FHitResult Hit;
 	FVector WorldLocation = ActorToWorld().TransformPosition(Location);
 	return !GetWorld()->SweepSingleByChannel(Hit, WorldLocation, WorldLocation, FQuat::Identity, ECollisionChannel::ECC_GameTraceChannel2, FCollisionShape::MakeSphere(Radius));
+}
+
+void ATile::PositionNavMeshBoundsVolume()
+{
+	NavMeshBoundsVolume = Pool->Checkout();
+	if (NavMeshBoundsVolume == nullptr) {
+		UE_LOG(LogTemp, Warning, TEXT("Empty pool"));
+		return;
+	}
+	NavMeshBoundsVolume->SetActorLocation(GetActorLocation());
 }

@@ -18,9 +18,6 @@ void AInfiniteTerrainGameMode::FindBoundsVolume()
 	UGameplayStatics::GetAllActorsOfClass(GetWorld(), ANavMeshBoundsVolume::StaticClass(), FoundActors);
 
 	for (AActor* FoundActor : FoundActors) {
-		ANavMeshBoundsVolume* NavVolume = Cast<ANavMeshBoundsVolume>(FoundActor);
-		if (NavVolume != nullptr) {
-			UE_LOG(LogTemp, Warning, TEXT("Found NavMesh: %s"), *NavVolume->GetName());
-		}
+		NavVolumePool->Return(FoundActor);
 	}
 }
