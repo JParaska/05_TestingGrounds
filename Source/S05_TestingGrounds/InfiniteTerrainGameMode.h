@@ -13,8 +13,19 @@ UCLASS()
 class S05_TESTINGGROUNDS_API AInfiniteTerrainGameMode : public AS05_TestingGroundsGameMode
 {
 	GENERATED_BODY()
-	
+
+/** Properties */
+protected:
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Navigation")
+	class UActorPool* NavVolumePool;
+
 /** Methods */
+public:
+
+	AInfiniteTerrainGameMode();
+
+	UFUNCTION(BlueprintPure, Category = "Navigation")
+	UActorPool*	GetNavVolumePool() { return NavVolumePool; }
 protected:
 
 	UFUNCTION(BlueprintCallable, Category = "Navigation")

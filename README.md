@@ -119,3 +119,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Flyweight pattern for foliage (TG92 Spawning foliage in tiles)
 1. Choosing waypoint with EQS (TG93 Choosing waypoint with EQS)
 1. Find actors of type from C++ (TG94 Find all NavMeshBoundVolumes in C++)
+1. Plumbing an actor pool setup (TG95 Creating navmesh pool)

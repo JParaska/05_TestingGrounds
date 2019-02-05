@@ -12,7 +12,9 @@ class S05_TESTINGGROUNDS_API ATile : public AActor
 	GENERATED_BODY()
 
 /** Properties */
-
+private:
+	UPROPERTY()
+	class UActorPool* Pool;
 
 /** Methods */	
 public:	
@@ -24,6 +26,9 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Terrain")
 	void PlaceActors(TSubclassOf<AActor> ToSpawn, float Radius = 100, int MinSpawn = 1, int MaxSpawn = 1, float MinScale = 1, float MaxScale = 1);
+
+	UFUNCTION(BlueprintCallable, Category = "Pool")
+	void SetPool(UActorPool* InPool);
 
 protected:
 	// Called when the game starts or when spawned

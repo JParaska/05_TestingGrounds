@@ -2,9 +2,15 @@
 
 #include "InfiniteTerrainGameMode.h"
 
+#include "ActorPool.h"
 #include "AI/Navigation/NavMeshBoundsVolume.h"
 #include "Engine/World.h"
 #include "Kismet/GameplayStatics.h"
+
+
+AInfiniteTerrainGameMode::AInfiniteTerrainGameMode() {
+	NavVolumePool = CreateDefaultSubobject<UActorPool>(FName("NavMeshBoundsVolumePool"));
+}
 
 void AInfiniteTerrainGameMode::FindBoundsVolume()
 {

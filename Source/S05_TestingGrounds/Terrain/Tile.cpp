@@ -2,6 +2,7 @@
 
 #include "Tile.h"
 
+#include "ActorPool.h"
 #include "DrawDebugHelpers.h"
 #include "Engine/World.h"
 
@@ -36,6 +37,11 @@ void ATile::PlaceActors(TSubclassOf<AActor> ToSpawn, float Radius, int MinSpawn,
 			PlaceActor(ToSpawn, SpawnPoint, RandomScale);
 		}
 	}
+}
+
+void ATile::SetPool(UActorPool * InPool)
+{
+	Pool = InPool;
 }
 
 bool ATile::FindEmptyLocation(FVector& EmptyLocation, float Radius)
