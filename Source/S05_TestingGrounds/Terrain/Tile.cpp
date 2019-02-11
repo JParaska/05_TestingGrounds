@@ -3,6 +3,7 @@
 #include "Tile.h"
 
 #include "ActorPool.h"
+#include "AI/Navigation/NavigationSystem.h"
 #include "DrawDebugHelpers.h"
 #include "Engine/World.h"
 
@@ -14,6 +15,8 @@ ATile::ATile()
 
 	MinExtent = FVector(0, -2000, 0);
 	MaxExtent = FVector(4000, 2000, 0);
+
+	NavigationBoundsOFfset = FVector(2000, 0, 0);
 }
 
 // Called when the game starts or when spawned
@@ -94,5 +97,6 @@ void ATile::PositionNavMeshBoundsVolume()
 		UE_LOG(LogTemp, Warning, TEXT("Empty pool"));
 		return;
 	}
-	NavMeshBoundsVolume->SetActorLocation(GetActorLocation());
+	NavMeshBoundsVolume->SetActorLocation(GetActorLocation() + NavigationBoundsOFfset);
+	GetWorld()->GetNavigationSystem()->Build();
 }

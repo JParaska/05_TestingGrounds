@@ -25,6 +25,9 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Spawning")
 	FVector MaxExtent;
 
+	UPROPERTY(EditDefaultsOnly, Category = "Navigation")
+	FVector NavigationBoundsOFfset;
+
 /** Methods */	
 public:	
 	// Sets default values for this actor's properties

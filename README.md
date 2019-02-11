@@ -122,3 +122,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Plumbing an actor pool setup (TG95 Creating navmesh pool)
 1. Using the pool API (TG96 Using the pool API)
 1. Using TArray for pools (TG97 Using TArray for pools)
+1. Rebuilding navigation meshes (TG98 Rebuilding navigation meshes)
