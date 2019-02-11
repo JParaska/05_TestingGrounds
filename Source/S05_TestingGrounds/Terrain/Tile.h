@@ -18,6 +18,13 @@ private:
 
 	AActor* NavMeshBoundsVolume;
 
+protected:
+	UPROPERTY(EditDefaultsOnly, Category = "Spawning")
+	FVector MinExtent;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Spawning")
+	FVector MaxExtent;
+
 /** Methods */	
 public:	
 	// Sets default values for this actor's properties

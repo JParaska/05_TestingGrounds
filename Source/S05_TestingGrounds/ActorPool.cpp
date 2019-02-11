@@ -15,13 +15,13 @@ UActorPool::UActorPool()
 
 AActor * UActorPool::Checkout()
 {
-	UE_LOG(LogTemp, Warning, TEXT("[%s] checkout"), *GetName());
-	return nullptr;
+	return Pool.Num() == 0 ? nullptr : Pool.Pop();
 }
 
 void UActorPool::Return(AActor * ActorToReturn)
 {
 	if (ActorToReturn != nullptr) {
 		UE_LOG(LogTemp, Warning, TEXT("[%s] returned to pool"), *ActorToReturn->GetName());
+		Pool.Push(ActorToReturn);
 	}
 }

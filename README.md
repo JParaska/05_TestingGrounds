@@ -121,3 +121,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Find actors of type from C++ (TG94 Find all NavMeshBoundVolumes in C++)
 1. Plumbing an actor pool setup (TG95 Creating navmesh pool)
 1. Using the pool API (TG96 Using the pool API)
+1. Using TArray for pools (TG97 Using TArray for pools)
