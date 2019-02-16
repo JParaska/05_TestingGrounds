@@ -133,3 +133,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Fixing double spawning (TG104 Using templates to spawn props and AI)
 1. Using the HUD class (TG105 Adding score HUD)
 1. Post processing for tunnel vision (TG106 Hit bleeding effect)
+1. Recruting play testers (TG107 Adding laser projectiles and healthbar)
