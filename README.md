@@ -134,3 +134,5 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Using the HUD class (TG105 Adding score HUD)
 1. Post processing for tunnel vision (TG106 Hit bleeding effect)
 1. Recruting play testers (TG107 Adding laser projectiles and healthbar)
+1. Smooth blending the camera
+1. Possessing and the view target (TG109 Spawning death camera)
