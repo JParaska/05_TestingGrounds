@@ -3,6 +3,8 @@ A Hunger Games inspired FPS with large outdoor terrains, advanced AI, basic netw
 
 This project was created following [Unreal Engine Developer Course | Udemy](https://www.udemy.com/unrealcourse/).
 
+**Please note** that conetnt of this repository is not identical to original course repozitory.
+
 ## Game Development Document
 
 1. Concept
@@ -130,3 +132,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Template specialization
 1. Fixing double spawning (TG104 Using templates to spawn props and AI)
 1. Using the HUD class (TG105 Adding score HUD)
+1. Post processing for tunnel vision (TG106 Hit bleeding effect)
