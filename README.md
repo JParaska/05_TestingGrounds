@@ -125,3 +125,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Rebuilding navigation meshes (TG98 Rebuilding navigation meshes)
 1. Structs to simplify function args
 1. Spawning AI from C++ (TG100 Spawning AI pawns in tiles)
+1. Keeping score (TG101 Keeping score)
