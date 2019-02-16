@@ -54,10 +54,13 @@ protected:
 private:
 
 	bool FindEmptyLocation(FVector& EmptyLocation, float Radius);
-	
-	void PlaceActor(TSubclassOf<AActor> ToSpawn, FVector Location, float Scale);
 
-	void PlaceAIPawn(TSubclassOf<APawn> ToSpawn, FVector SpawnPoint);
+	template<class T>
+	void RandomlyPlaceActors(TSubclassOf<T> ToSpawn, float Radius = 100, int MinSpawn = 1, int MaxSpawn = 1, float MinScale = 1, float MaxScale = 1);
+	
+	void PlaceActor(TSubclassOf<AActor> ToSpawn, FTransform Transform);
+
+	void PlaceActor(TSubclassOf<APawn> ToSpawn, FTransform Transform);
 
 	bool CanSpawnAtLocation(FVector Location, float Radius);
 
