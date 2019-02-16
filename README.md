@@ -129,3 +129,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Understanding function templates
 1. Template specialization
 1. Fixing double spawning (TG104 Using templates to spawn props and AI)
+1. Using the HUD class (TG105 Adding score HUD)
