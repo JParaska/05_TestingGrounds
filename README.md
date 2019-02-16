@@ -136,3 +136,4 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Recruting play testers (TG107 Adding laser projectiles and healthbar)
 1. Smooth blending the camera
 1. Possessing and the view target (TG109 Spawning death camera)
+1. The calm before the storm (TG110 Adding starting ground with no enemies)

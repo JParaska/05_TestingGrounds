@@ -98,10 +98,10 @@ void ATile::PlaceActor(TSubclassOf<AActor> ToSpawn, FTransform Transform)
 
 void ATile::PlaceActor(TSubclassOf<APawn> ToSpawn, FTransform Transform)
 {
-	APawn* Spawned = GetWorld()->SpawnActor<APawn>(ToSpawn);
+	FRotator Rotation = FRotator(0, FMath::RandRange(-180, 180), 0);
+	FVector Location = ActorToWorld().TransformPosition(Transform.GetLocation());
+	APawn* Spawned = GetWorld()->SpawnActor<APawn>(ToSpawn, Location, Rotation);
 	if (Spawned) {
-		Spawned->SetActorLocation(ActorToWorld().TransformPosition(Transform.GetLocation()));
-		Spawned->SetActorRotation(FRotator(0, FMath::RandRange(-180, 180), 0));
 		Spawned->Tags.Add(FName("Enemy"));
 		Spawned->SpawnDefaultController();
 	}
