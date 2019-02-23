@@ -3,7 +3,7 @@
 #include "InfiniteTerrainGameMode.h"
 
 #include "ActorPool.h"
-#include "AI/Navigation/NavMeshBoundsVolume.h"
+#include "NavMesh/NavMeshBoundsVolume.h"
 #include "Engine/World.h"
 #include "Kismet/GameplayStatics.h"
 

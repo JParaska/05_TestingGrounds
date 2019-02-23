@@ -3,7 +3,7 @@
 #include "Tile.h"
 
 #include "ActorPool.h"
-#include "AI/Navigation/NavigationSystem.h"
+#include "NavigationSystem.h"
 #include "DrawDebugHelpers.h"
 #include "Engine/World.h"
 
@@ -123,5 +123,5 @@ void ATile::PositionNavMeshBoundsVolume()
 		return;
 	}
 	NavMeshBoundsVolume->SetActorLocation(GetActorLocation() + NavigationBoundsOFfset);
-	GetWorld()->GetNavigationSystem()->Build();
+	UNavigationSystemV1::GetNavigationSystem(GetWorld())->Build();
 }

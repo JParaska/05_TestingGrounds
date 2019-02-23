@@ -137,3 +137,7 @@ This project was created following [Unreal Engine Developer Course | Udemy](http
 1. Smooth blending the camera
 1. Possessing and the view target (TG109 Spawning death camera)
 1. The calm before the storm (TG110 Adding starting ground with no enemies)
+
+## Further development
+
+1. TG111 Updating to UE 4.21
